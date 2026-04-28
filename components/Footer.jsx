@@ -154,7 +154,7 @@ export default function Footer() {
           <div className="flex items-center gap-2 text-sm text-gray-500 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-800">
             <span>Product by </span>
             <a 
-              href="#" 
+              href="https://kuiperbeltlabs.com" 
               className="text-white font-semibold hover:text-green-400 transition-colors flex items-center gap-1"
             >
               Kuiperbeltlabs
