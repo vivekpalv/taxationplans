@@ -1,31 +1,3 @@
-// import Link from 'next/link';
-
-// export default function Navbar() {
-//   return (
-//     <nav className="fixed w-full z-50 bg-black/90 backdrop-blur-sm border-b border-gray-800">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <div className="flex justify-between items-center h-20">
-//           <div className="flex-shrink-0 flex items-center">
-//             <span className="text-2xl font-bold text-white tracking-tighter">
-//               Taxation<span className="text-green-500">Plans</span>
-//             </span>
-//           </div>
-//           <div className="hidden md:flex space-x-8">
-//             <Link href="#features" className="text-gray-300 hover:text-green-400 transition-colors">Features</Link>
-//             <Link href="#interface" className="text-gray-300 hover:text-green-400 transition-colors">Interface</Link>
-//             <Link href="#download" className="text-gray-300 hover:text-green-400 transition-colors">Download</Link>
-//           </div>
-//           <div>
-//             <button className="bg-green-600 hover:bg-green-500 text-white px-6 py-2 rounded-full font-medium transition-all shadow-[0_0_15px_rgba(22,163,74,0.4)]">
-//               Get Started
-//             </button>
-//           </div>
-//         </div>
-//       </div>
-//     </nav>
-//   );
-// }
-
 "use client";
 
 import { useState } from 'react';
@@ -44,7 +16,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+    <nav className="fixed w-full z-50 bg-white/0 backdrop-blur-md transition-all duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           
@@ -64,7 +36,6 @@ export default function Navbar() {
                  className="relative text-sm font-medium text-gray-600 hover:text-black transition-colors group py-2"
                >
                  {link.name}
-                 {/* Minimalist expanding underline animation */}
                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
                </Link>
             ))}
@@ -73,7 +44,6 @@ export default function Navbar() {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button 
               onClick={toggleMenu} 
@@ -85,7 +55,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Navigation Dropdown */}
       <div 
         className={`md:hidden absolute w-full bg-white border-b border-gray-100 overflow-hidden transition-all duration-300 ease-in-out ${
           isOpen ? 'max-h-64 opacity-100' : 'max-h-0 opacity-0'
