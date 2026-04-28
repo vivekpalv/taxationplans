@@ -9,10 +9,12 @@ export default function Navbar() {
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
+  // 1. Updated navigation links to point to the correct routes
+  // Added '/' before anchors so they route back to the home page if you are on the Pricing page
   const navLinks = [
-    { name: 'Features', href: '#features' },
-    { name: 'Interface', href: '#interface' },
-    { name: 'Pricing', href: '#pricing' },
+    { name: 'Features', href: '/#features' },
+    { name: 'Interface', href: '/#interface' },
+    { name: 'Pricing', href: '/pricing' }, // Now points to the actual Pricing page
   ];
 
   return (
@@ -39,9 +41,13 @@ export default function Navbar() {
                  <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-green-500 transition-all duration-300 group-hover:w-full"></span>
                </Link>
             ))}
-            <button className="bg-black hover:bg-gray-800 text-white px-5 py-2 rounded-full text-sm font-medium transition-all shadow-sm hover:shadow-md">
+            {/* 2. Changed from <button> to <Link> to navigate to the SignUp page */}
+            <Link 
+              href="/signup" 
+              className="bg-black hover:bg-gray-800 text-white px-5 py-2 rounded-full text-sm font-medium transition-all shadow-sm hover:shadow-md"
+            >
               Sign In
-            </button>
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center">
@@ -71,9 +77,14 @@ export default function Navbar() {
               {link.name}
             </Link>
           ))}
-          <button className="w-full mt-2 bg-black text-white px-5 py-3 rounded-xl text-sm font-medium transition-all active:bg-gray-800">
+          {/* 3. Changed mobile button to <Link> as well */}
+          <Link 
+            href="/signup" 
+            onClick={() => setIsOpen(false)}
+            className="w-full mt-2 text-center bg-black text-white px-5 py-3 rounded-xl text-sm font-medium transition-all active:bg-gray-800"
+          >
             Sign In
-          </button>
+          </Link>
         </div>
       </div>
     </nav>
