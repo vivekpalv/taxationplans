@@ -25,7 +25,7 @@ export default function Navbar() {
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link href="/" className="text-2xl font-extrabold text-[#131426] tracking-tighter">
-              Taxation<span className="text-green-500">Plans</span>
+              Taxation<span className="text-green-500">Plan</span>
             </Link>
           </div>
 

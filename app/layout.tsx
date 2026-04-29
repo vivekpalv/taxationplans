@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Taxation Plans",
+  title: "Taxation Plan",
   description: "Accounting Software",
 };
 

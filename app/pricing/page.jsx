@@ -28,7 +28,7 @@ export default function Pricing() {
             <span className="text-green-500">Currently 100% Free.</span>
           </h1>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            We are offering full, unrestricted access to Taxation Plans at zero cost. No hidden fees, no credit card required.
+            We are offering full, unrestricted access to Taxation Plan at zero cost. No hidden fees, no credit card required.
           </p>
         </div>
 

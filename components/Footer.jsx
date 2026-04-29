@@ -37,7 +37,7 @@ export default function Footer() {
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="inline-block mb-6">
               <span className="text-3xl font-bold text-white tracking-tighter">
-                Taxation<span className="text-green-500">Plans</span>
+                Taxation<span className="text-green-500">Plan</span>
               </span>
             </Link>
             <p className="text-gray-400 text-base leading-relaxed mb-6 max-w-sm">
@@ -148,7 +148,7 @@ export default function Footer() {
         {/* Bottom Bar Section */}
         <div className="pt-8 border-t border-gray-900 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-sm text-center md:text-left">
-            &copy; {new Date().getFullYear()} Taxation Plans. All rights reserved.
+            &copy; {new Date().getFullYear()} Taxation Plan. All rights reserved.
           </p>
           
           <div className="flex items-center gap-2 text-sm text-gray-500 bg-gray-900/50 px-4 py-2 rounded-full border border-gray-800">
