@@ -8,7 +8,7 @@ export default function Hero() {
 
   // The permanent link to your manual GitHub release
   // const WINDOWS_DOWNLOAD_URL = "https://github.com/vivekpalv/taxation-plan-download/releases/latest/download/busyFX-1.0.exe";
-  const WINDOWS_DOWNLOAD_URL = "https://github.com/vivekpalv/taxation-plan-download/releases/download/v1.0.2/taxationplans-1.0.exe";
+  const WINDOWS_DOWNLOAD_URL = "https://github.com/vivekpalv/taxation-plan-download/releases/latest/download/taxationplans-1.0.exe";
 
   useEffect(() => {
     const userAgent = window.navigator.userAgent.toLowerCase();
